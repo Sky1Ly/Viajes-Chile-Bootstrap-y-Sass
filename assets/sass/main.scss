@@ -3,12 +3,15 @@
 
 //abstracts
 @import './abstracts/generals';
+@import './abstracts/mixin';
 //base
 
 //layout
 
 //components
+@import './components/menu';
 
 //pages
+@import '../../assets/css/style.css'
 
 //theme
