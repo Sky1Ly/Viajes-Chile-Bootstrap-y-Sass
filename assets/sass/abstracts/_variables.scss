@@ -3,11 +3,13 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/variables-dark";
 
+//Variables individuales
+$colot-testimonio: #85654e;
+
 //Colors
 $custom-colors: (
     'color-theme': #212529,
-    'color-white': #fff,
-    'colot-testimonio': #85654e
+    'color-white': #fff
 );
 
 //Merge the Colors

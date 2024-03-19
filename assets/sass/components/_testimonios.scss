@@ -1,0 +1,22 @@
+@import '../abstracts/mixin';
+@import '../abstracts/variables';
+
+.testimonio {
+    color: $colot-testimonio;
+    text-align: center;
+
+    &__text {
+        font-size: 16px;
+    }
+
+    &__img-circle {
+        @include img-circle;
+        margin-top: 20px;
+    }
+
+    &__person {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+}

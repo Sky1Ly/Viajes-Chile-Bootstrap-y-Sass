@@ -2,3 +2,10 @@
   width: 30px;
   margin-right: 8px;
 }
+
+@mixin img-circle {
+  width: 26%;
+  height: 26%;
+  border-radius: 50%;
+  object-fit: cover;
+}

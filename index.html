@@ -232,32 +232,35 @@
         <h2 class="text-center mt-3 text-color-white">Testimonios</h2>
         <hr class="text-color-white">
 
-        <div class="row text-colot-testimonio">
-            <div class="col-md-4 text-center">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea velit, aliquam voluptatem similique eos
+        <div class="row testimonio">
+            <div class="col-md-4">
+                <p class="testimonio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea velit, aliquam
+                    voluptatem similique eos
                     eaque repellat quaerat deleniti hic! Itaque excepturi autem animi, nemo id quibusdam eveniet libero
                     rem quam.
                 </p>
-                <img src="./assets/img/testimonio1.webp" class="rounded-circle w-25 h-25 mt-3 object-fit-cover">
-                <p class="mt-3"><span>Mariela</span></p>
+                <img src="./assets/img/testimonio1.webp" class="testimonio__img-circle">
+                <p class="testimonio__person"><span>Mariela</span></p>
             </div>
 
-            <div class="col-md-4 text-center">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea velit, aliquam voluptatem similique eos
+            <div class="col-md-4">
+                <p class="testimonio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea velit, aliquam
+                    voluptatem similique eos
                     eaque repellat quaerat deleniti hic! Itaque excepturi autem animi, nemo id quibusdam eveniet libero
                     rem quam.
                 </p>
-                <img src="./assets/img/testimonio2.webp" class="rounded-circle w-25 h-25 mt-3 object-fit-cover">
-                <p class="mt-3"><span>Christian</span></p>
+                <img src="./assets/img/testimonio2.webp" class="testimonio__img-circle">
+                <p class="testimonio__person"><span>Christian</span></p>
             </div>
 
-            <div class="col-md-4 text-center">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea velit, aliquam voluptatem similique eos
+            <div class="col-md-4">
+                <p class="testimonio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea velit, aliquam
+                    voluptatem similique eos
                     eaque repellat quaerat deleniti hic! Itaque excepturi autem animi, nemo id quibusdam eveniet libero
                     rem quam.
                 </p>
-                <img src="./assets/img/testimonio3.webp" class="rounded-circle w-25 h-25 mt-3 object-fit-cover">
-                <p class="mt-3"><span>Fernanda</span></p>
+                <img src="./assets/img/testimonio3.webp" class="testimonio__img-circle">
+                <p class="testimonio__person"><span>Fernanda</span></p>
             </div>
         </div>
     </section>
@@ -268,7 +271,7 @@
         <hr class="text-color-white">
         <div class="row">
             <div class="col-md-6 col-12 mt-3">
-                <form>
+                <form action="#contacto">
                     <!--Nombre y Email-->
                     <div class="mb-3 row">
                         <div class="col-md-6">
@@ -295,7 +298,8 @@
 
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label href="#" class="form-check-label text-color-white" for="flexCheckDefault" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <label href="#" class="form-check-label text-color-white" for="flexCheckDefault"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Acepto los términos y condiciones
                         </label>
 
@@ -310,7 +314,10 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Al hacer clic en "Acepto", estás aceptando automáticamente ser parte de nuestro club de lectores de términos y condiciones. Los beneficios incluyen recibir alegría en forma de emojis y memes de gatos cada vez que actualicemos nuestros términos.</p>
+                                        <p>Al hacer clic en "Acepto", estás aceptando automáticamente ser parte de
+                                            nuestro club de lectores de términos y condiciones. Los beneficios incluyen
+                                            recibir alegría en forma de emojis y memes de gatos cada vez que
+                                            actualicemos nuestros términos.</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -323,6 +330,8 @@
 
                     <div id="liveAlertPlaceholder" class="text-color-white"></div>
                     <button type="submit" class="btn btn-light mt-3 mb-3" id="liveAlertBtn">Enviar</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
                 </form>
             </div>
 
