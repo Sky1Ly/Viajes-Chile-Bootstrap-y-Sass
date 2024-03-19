@@ -1,9 +1,7 @@
-//Import Bootstrapp
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
 //abstracts
 @import './abstracts/generals';
 @import './abstracts/mixin';
+@import './abstracts/variables';
 //base
 
 //layout
@@ -12,6 +10,8 @@
 @import './components/menu';
 
 //pages
-@import '../../assets/css/style.css'
 
 //theme
+
+//Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

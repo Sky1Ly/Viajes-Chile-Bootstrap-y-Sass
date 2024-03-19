@@ -1,1 +1,14 @@
-$bg-color: #212529;
+//Class Bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+
+//Colors
+$custom-colors: (
+    'color-theme': #212529,
+    'color-white': #fff,
+    'colot-testimonio': #85654e
+);
+
+//Merge the Colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
