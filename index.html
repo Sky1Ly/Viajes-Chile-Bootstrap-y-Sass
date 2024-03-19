@@ -273,12 +273,14 @@
                     <div class="mb-3 row">
                         <div class="col-md-6">
                             <label for="nameFormImput" class="form-label text-color-white">Nombre <i
-                                    class="fa-solid fa-circle-question"></i></label>
+                                    class="fa-solid fa-circle-question" data-bs-toggle="tooltip"
+                                    data-bs-title="Ingrese nombre completo"></i></label>
                             <input type="text" class="form-control" id="nameFormImput">
                         </div>
                         <div class="col-md-6">
                             <label for="emailFormImput" class="form-label text-color-white">Email <i
-                                    class="fa-solid fa-circle-question"></i></label>
+                                    class="fa-solid fa-circle-question" data-bs-toggle="tooltip"
+                                    data-bs-title="Digite su Email del siguiente modo: ejemplo@gmail.com"></i></label>
                             <input type="email" class="form-control" id="emailFormImput">
                         </div>
                     </div>
@@ -286,18 +288,41 @@
                     <!--Text Area-->
                     <div class="mb-3">
                         <label for="texAreaFormImput" class="form-label text-color-white">Mensaje <i
-                                class="fa-solid fa-circle-question"></i></label>
+                                class="fa-solid fa-circle-question" data-bs-toggle="tooltip"
+                                data-bs-title="Ingrese el mensaje"></i></label>
                         <textarea class="form-control" id="texAreaFormImput" rows="3"></textarea>
                     </div>
 
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label text-color-white" for="flexCheckDefault">
+                        <label href="#" class="form-check-label text-color-white" for="flexCheckDefault" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Acepto los términos y condiciones
                         </label>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Terminos y condiciones</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Al hacer clic en "Acepto", estás aceptando automáticamente ser parte de nuestro club de lectores de términos y condiciones. Los beneficios incluyen recibir alegría en forma de emojis y memes de gatos cada vez que actualicemos nuestros términos.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <button type="submit" class="btn btn-light mt-3">Enviar</button>
+                    <div id="liveAlertPlaceholder" class="text-color-white"></div>
+                    <button type="submit" class="btn btn-light mt-3 mb-3" id="liveAlertBtn">Enviar</button>
                 </form>
             </div>
 
