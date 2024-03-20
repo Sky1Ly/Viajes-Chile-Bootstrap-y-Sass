@@ -1,17 +1,5 @@
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
-/** Tooltip */
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-
-/** Modal */
-const myModal = document.getElementById('myModal');
-const myInput = document.getElementById('myInput');
-
-myModal.addEventListener('shown.bs.modal', () => {
-    myInput.focus()
-})
-
 /** Alert */
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
@@ -29,6 +17,18 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-        appendAlert('Nice, you triggered this alert message!', 'success')
+        appendAlert('Se ha enviado el formulario correctamente', 'success')
     })
 }
+
+/** Tooltip */
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+/** Modal */
+const myModal = document.getElementById('myModal');
+const myInput = document.getElementById('myInput');
+
+myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})
